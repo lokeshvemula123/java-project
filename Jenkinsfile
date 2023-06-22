@@ -14,12 +14,7 @@ pipeline {
       }
      }
     
-    stage('Maven Build') {
-     steps { 
-          sh "mvn clean package && cp target/*.jar . "
-     }
-    }
-     
+   
      stage('Docker Image Build') {     
         steps {
               sh 'sudo docker build -t myjava-image . '
