@@ -1,6 +1,6 @@
 pipeline {
    environment {
-     git_url = "https://github.com/lokeshvemula123/jenkins-job.git"
+     git_url = "https://github.com/lokeshvemula123/java-project.git"
      git_branch = "master"
    }
 
