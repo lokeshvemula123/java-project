@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Pull Source') {
       steps {
-        git credentialsId: 'dd06b1a1-9ae8-4d9d-8d14-58cd9c4189a7', branch: "${git_branch}", url: "${git_url}"
+        git credentialsId: 'git', branch: "${git_branch}", url: "${git_url}"
        
       }
      }
